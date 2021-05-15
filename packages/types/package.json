@@ -1,14 +1,15 @@
 {
   "name": "@bham/types",
   "version": "0.0.1",
-  "description": "@bham types package",
+  "description": "@bham monorepo types",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Jon Leibham <jleibham@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "clean": "rimraf dist *.tsbuildinfo"
+    "clean": "rimraf dist *.tsbuildinfo",
+    "build": "tsc -b ."
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.2",

@@ -3,7 +3,7 @@ import * as inquirer from 'inquirer'
 import { scaffoldPackage } from './scaffolder'
 
 // Helper Utils
-const activePackages = fs.readdirSync('../../packages', { withFileTypes: true }).filter(source => source.isDirectory()).map(source => source.name)
+const activePackages = fs.readdirSync('packages', { withFileTypes: true }).filter(source => source.isDirectory()).map(source => source.name)
 
 const prompts = [
   {
@@ -27,5 +27,3 @@ const prompts = [
 inquirer.prompt(prompts).then(({ name, description }) => {
   scaffoldPackage(name, description)
 })
-
-

@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import * as rimraf from 'rimraf'
-const convertStringToKabob = (string: string) => string.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, '$1-$2').toLowerCase()
+import { convertStringToKabob } from '@bham/utils'
 
 const copyDir = (src: string, dest: string) => {
   fs.mkdirSync(dest, { recursive: true })
@@ -38,10 +38,7 @@ export const scaffoldPackage = (name: string, description: string) => {
     const packageNameKabob = convertStringToKabob(name)
     rimraf.sync(`../../packages/${packageNameKabob}`)
   }
-
 }
-
-scaffoldPackage('test', '')
 
 // Updates project files with correct var names matching project
 const patchFileVars = (dist: string, file: string, name: string, description: string) => {

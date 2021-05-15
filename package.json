@@ -9,8 +9,11 @@
     "yarn": "1.22.10"
   },
   "scripts": {
-    "scaffold": "scripty",
-    "clean": "scripty"
+    "build": "scripty",
+    "test": "scripty",
+    "lint": "scripty",
+    "clean": "scripty",
+    "scaffold": "node packages/scaffold/dist/index.js"
   },
   "scripty": {
     "path": "./scripts/workspace"

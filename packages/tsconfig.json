@@ -1,7 +1,8 @@
 {
   "files": [],
   "references": [
-    { "path" :"types" },
-    { "path" :"utils" },
+    { "path": "scaffold" },
+    { "path": "types" },
+    { "path": "utils" },
   ]
 }

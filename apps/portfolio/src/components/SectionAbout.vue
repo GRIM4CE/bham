@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { DText } from "@bham/design-system";
+</script>
+
+
 <template>
   <section>
     <DText>

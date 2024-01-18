@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DLink from "./DLink.vue";
+import { DLink } from "@bham/design-system";
 </script>
 
 <template>

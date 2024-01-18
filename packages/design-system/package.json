@@ -2,16 +2,15 @@
   "name": "@bham/design-system",
   "version": "0.0.0",
   "private": true,
-  "exports": {
-    "./button": "./src/DButton.vue",
-    "./link": "./src/DLink.vue",
-    "./text": "./src/DText.vue"
-  },
+  "type": "module",
+  "files": ["dist"],
+  "module": "./dist/index.umd.js",
+  "types": "./dist/src/index.d.ts",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build --watch",
     "build": "run-p type-check \"build-only {@}\" --",
     "test:unit": "vitest",
-    "build-only": "vite build && vue-tsc --emitDeclarationOnly",
+    "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"

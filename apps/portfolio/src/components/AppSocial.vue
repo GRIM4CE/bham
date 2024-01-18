@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import DLink from "./DLink.vue";
-import DIcon from "./DIcon.vue";
+import { DLink, DIcon } from "@bham/design-system";
 
 type SocialLink = {
   href: string,

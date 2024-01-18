@@ -1,4 +1,4 @@
-import "./assets/main.scss";
+import "@bham/design-system/dist/style.css"
 
 import { createApp } from "vue";
 import App from "./App.vue";

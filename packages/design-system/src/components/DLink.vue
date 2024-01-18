@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <a><slot /></a>
+  <a class="link"><slot /></a>
 </template>
 
 <style scoped lang="scss">
-a {
+.link {
   color: var(--color-text);
   cursor: pointer;
 

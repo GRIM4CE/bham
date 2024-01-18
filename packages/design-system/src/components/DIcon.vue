@@ -1,18 +1,25 @@
 <script setup lang="ts">
-import icons from "../../assets/icons";
-import { useAttrs, computed } from "vue";
+import icons from "../assets/icons";
+import { computed } from "vue";
 
-const attrs = useAttrs();
+import type { PropType } from "vue";
+import type { DIconName } from "./DIcon";
+
+const props  = defineProps({
+  name: {
+    type: String as PropType<DIconName>,
+  },
+});
 
 const paths = computed(() => {
-  if (attrs.name && typeof attrs.name === "string") {
-    const icon = icons.find((icon) => icon.name === attrs.name);
+  if (props.name && typeof props.name === "string") {
+    const icon = icons.find((icon) => icon.name === props.name);
     if (icon && icon.paths) {
       return icon.paths;
     }
   }
   throw new Error(
-    `The icon: "${attrs.name}" is either unregistered or does not exist in the "/assets/icons.ts"`
+    `The icon: "${props.name}" is either unregistered or does not exist in the "/assets/icons.ts"`
   );
 });
 </script>

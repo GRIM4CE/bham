@@ -10,6 +10,9 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "NodeNext"
+    "module": "NodeNext",
+    "paths": {
+      "@/*": ["../src/*"]
+    }
   }
 }

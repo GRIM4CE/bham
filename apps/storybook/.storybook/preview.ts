@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/vue3";
 
-import '../src/assets/main.scss';
+import "@bham/design-system/dist/style.css"
 
 const preview: Preview = {
   parameters: {

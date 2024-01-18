@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-import DText from './DText.vue';
+import { DText } from '@bham/design-system';
 
 const meta = {
   title: 'Base/Text',

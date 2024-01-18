@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-import DLink from './DLink.vue';
+import { DLink } from '@bham/design-system';
 
 const meta = {
   title: 'Base/Link',

@@ -6,10 +6,19 @@
       "dependsOn": ["^build"],
       "outputs": ["dist"]
     },
+    "build-storybook": {
+      "dependsOn": ["^build"],
+      "outputs": ["storybook-static"]
+    },
     "lint": {
       "dependsOn": ["^lint"]
     },
     "dev": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    },
+    "storybook": {
       "dependsOn": ["^build"],
       "cache": false,
       "persistent": true

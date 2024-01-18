@@ -2,17 +2,22 @@
   "files": [],
   "references": [
     {
-      "path": "./config/tsconfig.vite.json"
+      "path": "./tsconfig.vite.json"
     },
     {
-      "path": "./config/vite-browser.json"
+      "path": "./vite-browser.json"
     },
   ],
   "compilerOptions": {
-    "baseUrl": ".",
+    "rootDir": "./src/",
+    "outDir": "./dist/",
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "emitDeclarationOnly": true,
     "module": "NodeNext",
     "paths": {
-      "@/*": ["../src/*"]
+      "@/*": ["./src/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", "dist"]
 }

@@ -4,7 +4,7 @@ import { DIcon, DText } from '@bham/design-system';
 import icons from "@/assets/icons"
 
 const meta = {
-    title: 'Global/Icons',
+    title: 'Design System/General/Icons',
     render: (args: any) => ({
       components: { DIcon, DText },
       setup() {

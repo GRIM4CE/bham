@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@bham/design-system": "*",
+    "@storybook/addon-a11y": "^7.6.10",
     "vue": "^3.3.11"
   },
   "devDependencies": {

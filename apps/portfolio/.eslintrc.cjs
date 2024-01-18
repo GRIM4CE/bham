@@ -1,8 +1,14 @@
+/* eslint-env node */
+require('@rushstack/eslint-patch/modern-module-resolution')
+
+
 module.exports = {
   root: true,
   extends: ["@bham/eslint-config/vue-app.js"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: true,
+    root: true,
+    tsconfigRootDir: __dirname,
+    project: ["./tsconfig.json"],
   },
 };

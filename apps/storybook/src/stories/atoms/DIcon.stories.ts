@@ -4,7 +4,7 @@ import { DIcon } from '@bham/design-system';
 import icons from "@/assets/icons"
 
 const meta = {
-  title: 'Base/Icon',
+  title: 'Design System/Atoms/Icon',
   component: DIcon,
   tags: ['autodocs'],
   argTypes: {

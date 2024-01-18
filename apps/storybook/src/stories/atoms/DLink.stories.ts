@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import { DLink } from '@bham/design-system';
 
 const meta = {
-  title: 'Base/Link',
+  title: 'Design System/Atoms/Link',
   component: DLink,
   tags: ['autodocs'],
   args: { label: "link" },

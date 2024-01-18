@@ -16,9 +16,12 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.3.11"
+    "vue": "^3.3.11",
+    "@bham/design-system": "*"
   },
   "devDependencies": {
+    "@bham/eslint-config": "*",
+    "@bham/typescript-config": "*",
     "@rushstack/eslint-patch": "^1.3.3",
     "@tsconfig/node18": "^18.2.2",
     "@types/jsdom": "^21.1.6",

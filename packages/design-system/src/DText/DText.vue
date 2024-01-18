@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { useAttrs } from "vue";
+import type { PropType } from "vue";
+import type { DTextType, DTextVariant } from "./DText";
 
-defineProps({
+const props = defineProps({
   type: {
-    type: String,
+    type: String as PropType<DTextType>,
     default: "p"
   },
   variant: {
-    type: String,
+    type: String as PropType<DTextVariant>,
     default: "p"
   }
 });

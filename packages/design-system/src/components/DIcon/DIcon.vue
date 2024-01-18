@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import icons from "../assets/icons";
+import icons from "../../assets/icons";
 import { useAttrs, computed } from "vue";
 
 const attrs = useAttrs();

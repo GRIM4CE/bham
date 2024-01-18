@@ -1,14 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-import DLink from './DLink.vue';
+import DIcon from './DIcon.vue';
+import icons from "@/assets/icons"
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta = {
-  title: 'Base/Link',
-  component: DLink,
+  title: 'Base/Icon',
+  component: DIcon,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
-} satisfies Meta<typeof DLink>;
+  argTypes: {
+    name: { control: 'select', options: icons.map((icon) => icon.name) },
+  },
+  args: { name: "email" }, // default value
+} satisfies Meta<typeof DIcon>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

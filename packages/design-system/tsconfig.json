@@ -1,14 +1,15 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
-    },
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "include": [
+    "src/**/*.ts",
   ],
   "compilerOptions": {
-    "module": "NodeNext"
+    "outDir": "dist",
+    "declaration": true,
+    "composite": true,
+    "noEmit": false,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node"]
   }
 }

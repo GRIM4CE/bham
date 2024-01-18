@@ -11,9 +11,8 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.ts"),
-      name: "@bham/design-system",
-      fileName: "index",
+      entry: resolve(__dirname, 'src/index.ts'),
+      formats: ['es']
     },
     rollupOptions: {
       external: ["vue"],

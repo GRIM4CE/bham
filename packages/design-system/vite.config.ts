@@ -13,6 +13,15 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "./src/assets/vars/index.scss";
+        `
+      }
+    }
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),

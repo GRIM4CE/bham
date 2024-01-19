@@ -21,11 +21,6 @@ const attrs = useAttrs();
 </template>
 
 <style scoped lang="scss">
-
-.d-container {
-  padding: 1rem;
-}
-
 .inverted {
   background: var(--color-text);
   color: var(--color-background);
@@ -44,8 +39,19 @@ const attrs = useAttrs();
   height: 100%;
 }
 
-.wo-padding {
+.padding {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
 </style>

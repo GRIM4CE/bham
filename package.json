@@ -4,9 +4,9 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "storybook": "turbo storybook",
-    "build-storybook": "turbo build-storybook",
     "lint": "turbo lint",
+    "clean": "turbo clean",
+    "clean:deps": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {

@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "clean": "rimraf *.tsbuildinfo .turbo storybook-static",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },

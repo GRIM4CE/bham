@@ -28,7 +28,7 @@ export const projects = [
       img: "projects/bhamdesign.png",
       href: "https://bhamdesigns.com/",
       title: "bhamdesigns",
-      description: 'test',
+      description: 'Old portfolio site, built in nuxt3 and Typescript',
       keynotes: ["Vue", "Typescript"]
     }
   ]

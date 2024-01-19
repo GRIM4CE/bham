@@ -12,6 +12,7 @@
   "scripts": {
     "dev": "vite build --watch",
     "build": "run-p type-check \"build-only {@}\" --",
+    "clean": "rimraf dist *.tsbuildinfo .turbo",
     "test:unit": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",

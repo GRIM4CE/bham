@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
 import { DIcon, DText } from '@bham/design-system';
-import icons from "@/assets/icons"
+import icons from '@bham/design-system/src/assets/icons';
 
 const meta = {
     title: 'Design System/General/Icons',

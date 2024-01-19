@@ -20,6 +20,7 @@ export const about = [
 export const projects = [
   { 
       img: "projects/design-system.png",
+      href: "https://design.jonleibham.com/",
       title: "Portfolio Design-System Storybook",
       description: 'test',
       keynotes: ["Vue3", "Typescript", "Storybook", "Design-System", "A11y"]

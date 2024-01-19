@@ -1,5 +1,11 @@
+export type ImgType = {
+  src: string,
+  alt: string,
+}
+
+
 export type DProjectCardType = {
-  img: string,
+  img: ImgType,
   href: string,
   title: string,
   description: string,

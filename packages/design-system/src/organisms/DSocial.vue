@@ -21,7 +21,7 @@ const props  = defineProps({
 <template>
   <nav class="social-link-nav">
     <template v-for="socialLink in links" :key="socialLink.name">
-      <DLink class="social-link" :href="socialLink.href" target="_blank">
+      <DLink class="social-link" :href="socialLink.href" target="_blank" :aria-label="socialLink.name">
         <DIcon :name="socialLink.name" />
       </DLink>
     </template>

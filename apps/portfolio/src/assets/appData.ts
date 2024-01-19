@@ -19,14 +19,21 @@ export const about = [
   
 export const projects = [
   { 
-      img: "projects/design-system.png",
+      img: {
+        src: "projects/design-system.png",
+        alt: "Portfolio Design System Web Screencap"
+      },
+      href: "https://design.jonleibham.com",
       title: "Portfolio Design-System Storybook",
       description: 'test',
       keynotes: ["Vue3", "Typescript", "Storybook", "Design-System", "A11y"]
     },
     { 
-      img: "projects/bhamdesign.png",
-      href: "https://bhamdesigns.com/",
+      img: {
+        src: "projects/bhamdesign.png",
+        alt: "Old Portfolio Site Web Screencap"
+      },
+      href: "https://bhamdesigns.com",
       title: "bhamdesigns",
       description: 'Old portfolio site, built in nuxt3 and Typescript',
       keynotes: ["Vue", "Typescript"]

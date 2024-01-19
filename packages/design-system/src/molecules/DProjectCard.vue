@@ -22,7 +22,7 @@ const props = defineProps({
   <DContainer class="d-project-card-wrapper">
     <DLink variant="no-style" :href="project.href" target="_blank">
       <DContainer class="d-project-card">
-        <DImg class="d-project-card-img" :src="project.img.src" :alt="project.img.alt" width="150" height="90"/>
+        <DImg class="d-project-card-img" :src="project.img.src" :alt="project.img.alt" width="400" height="220"/>
         <DContainer class="d-project-card-details">
           <DText type="h3" variant="h3">{{ project.title }}</DText>
           <DText>{{ project.description }}</DText>

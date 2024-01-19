@@ -23,7 +23,7 @@ export const projects = [
         src: "projects/design-system.png",
         alt: "Portfolio Design System Web Screencap"
       },
-      href: "https://design.jonleibham.com/",
+      href: "https://design.jonleibham.com",
       title: "Portfolio Design-System Storybook",
       description: 'test',
       keynotes: ["Vue3", "Typescript", "Storybook", "Design-System", "A11y"]
@@ -33,7 +33,7 @@ export const projects = [
         src: "projects/bhamdesign.png",
         alt: "Old Portfolio Site Web Screencap"
       },
-      href: "https://bhamdesigns.com/",
+      href: "https://bhamdesigns.com",
       title: "bhamdesigns",
       description: 'Old portfolio site, built in nuxt3 and Typescript',
       keynotes: ["Vue", "Typescript"]

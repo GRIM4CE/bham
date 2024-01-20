@@ -3,7 +3,13 @@ import DText from "../atoms/DText.vue";
 </script>
 
 <template>
-  <DText variant="footnote">
+  <DText class="d-footnote" variant="footnote">
     <slot />
   </DText>
 </template>
+
+<style scoped lang="scss">
+.d-footnote {
+  text-indent: 1em;
+}
+</style>

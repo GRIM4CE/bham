@@ -23,31 +23,35 @@ const attrs = useAttrs();
 
 <style scoped lang="scss">
 .h1 {
-  font-size: 2.027rem;
-  line-height: 1.4;
+  @extend %h1;
 }
 
 .h2 {
-  font-size: 1.802rem;
-  line-height: 1.5;
+  @extend %h2;
+
 }
 
 .h3 {
-  font-size: 1.602rem;
-  line-height: 1.2;
+  @extend %h3;
 }
+
+.h4 {
+  @extend %h4;
+}
+
+.h5 {
+  @extend %h5;
+}
+
+.h6 {
+  @extend %h6;
+}
+
 .p {
-  font-size: 12px;
-  line-height: 1.6;
-
-
-  @include lg {
-    font-size: 14px;
-    line-height: 1.6;
-  }
+  @extend %p;
 }
 
 .footnote {
-  font-size: 0.79rem;
+  @extend %footnote;
 }
 </style>

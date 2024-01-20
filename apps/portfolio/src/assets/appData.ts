@@ -25,8 +25,8 @@ export const projects = [
       },
       href: "https://design.jonleibham.com",
       title: "Portfolio Design-System Storybook",
-      description: 'test',
-      keynotes: ["Vue3", "Typescript", "Storybook", "Design-System", "A11y"]
+      description: 'Design System documentation for the current portfolio site. The documentation was built with Storybook 7 and vite using A11y for accessibility testing',
+      keynotes: ["Storybook", "Design-System", "Vite",  "A11y", "Vue3", "Typescript"]
     },
     { 
       img: {
@@ -35,7 +35,7 @@ export const projects = [
       },
       href: "https://bhamdesigns.com",
       title: "bhamdesigns",
-      description: 'Old portfolio site, built in nuxt3 and Typescript',
-      keynotes: ["Vue", "Typescript"]
+      description: 'Old portfolio site, built in Nuxt3 and Typescript.',
+      keynotes: ["Nuxt3", "SSR", "Vue", "Typescript"]
     }
   ]

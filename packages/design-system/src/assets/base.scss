@@ -62,6 +62,10 @@
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 1rem;
   color: var(--color-text);
@@ -78,5 +82,11 @@ body {
 
   @include lg {
     padding: 2rem;
+  }
+}
+
+.mobile-only {
+  @include lg {
+    display: none;
   }
 }

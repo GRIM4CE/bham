@@ -13,6 +13,16 @@ defineProps({
 
 <style scoped lang="scss">
 
+%link {
+  color: var(--color-text);
+  cursor: pointer;
+  transition: color .4s;
+
+  &:hover {
+    color: var(--violet);
+  }
+}
+
 .no-style {
   text-decoration: none;
   color: var(--color-text);
@@ -23,11 +33,12 @@ defineProps({
 }
 
 .link {
-  color: var(--color-text);
-  cursor: pointer;
+  @extend %link;
+}
 
-  &:hover {
-    color: var(--violet);
-  }
+.nav-link {
+  @extend %link;
+
+  font-size: 1.602rem;
 }
 </style>

@@ -7,8 +7,8 @@ const meta = {
   component: DText,
   tags: ['autodocs'],
   argTypes: {
-    type: { control: 'select', options: ["p", "h1"] },
-    variant: { control: 'select', options: ["p", "h1"] },
+    type: { control: 'select', options: ["h1", "h2", "h3", "p"] },
+    variant: { control: 'select', options: ["h1", "h2", "h3", "p", "footnote"] },
   },
   args: { slot: "This is some test text" },
   render: (args: any) => ({
@@ -23,16 +23,38 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Default: Story = {};
+
+export const heading1: Story = {
   args: {
-    type: "p",
+    type: "h1",
+    variant: "h1"
+  }
+};
+
+export const heading2: Story = {
+  args: {
+    type: "h2",
+    variant: "h2"
+  }
+};
+
+export const heading3: Story = {
+  args: {
+    type: "h3",
+    variant: "h3"
+  }
+};
+
+
+export const p: Story = {
+  args: {
     variant: "p"
   }
 };
 
-export const h1: Story = {
+export const footnote: Story = {
   args: {
-    type: "h1",
-    variant: "h1"
+    variant: "footnote"
   }
 };

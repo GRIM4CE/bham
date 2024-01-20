@@ -2,6 +2,7 @@
 import DChip from "./atoms/DChip.vue"
 import DContainer from "./atoms/DContainer.vue"
 import DIcon from "./atoms/DIcon.vue"
+import DImg from "./atoms/DImg.vue"
 import DLink from "./atoms/DLink.vue"
 import DText from "./atoms/DText.vue"
 
@@ -25,6 +26,7 @@ export {
     DChip,
     DContainer,
     DIcon,
+    DImg,
     DLink,
     DText,
     DProjectCard,

@@ -1,5 +1,18 @@
+<script setup lang="ts">
+  defineProps({
+    src: {
+      type: String,
+      required: true
+    },
+    alt: {
+      type: String,
+      required: true
+    }
+  })
+</script>
+
 <template>
-  <img clas="d-img"/>
+  <img clas="d-img" :src="src" :alt="alt"/>
 </template>
 
 <style scoped lang="scss">

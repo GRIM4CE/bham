@@ -17,6 +17,7 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-interactions"),
     getAbsolutePath("@storybook/addon-a11y"),
   ],
+  staticDirs: ['../public'],
   framework: {
     name: getAbsolutePath("@storybook/vue3-vite"),
     options: {}

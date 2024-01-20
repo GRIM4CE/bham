@@ -6,10 +6,10 @@ import DText from "../atoms/DText.vue";
 
 <template>
   <DContainer>
-    <DText type="h1" variant="h1">
+    <DText type="h1" variant="h2">
       <slot name="heading"/>
       </DText>
-    <DText type="h2" variant="h2">
+    <DText type="h2" variant="h3">
       <slot name="subheading"/>
     </DText>
     <DText class="d-intro-callout-text" type="p" variant="p">
@@ -20,6 +20,6 @@ import DText from "../atoms/DText.vue";
 
 <style lang="scss" scoped>
   .d-intro-callout-text {
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
 </style>

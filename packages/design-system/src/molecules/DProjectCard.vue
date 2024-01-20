@@ -41,10 +41,15 @@ const props = defineProps({
 }
 
 .d-project-card {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  grid-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
   text-decoration: none;
+
+  @include lg {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 2rem;
+  }
 
   &:hover {
     cursor: pointer;

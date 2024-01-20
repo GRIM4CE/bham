@@ -44,7 +44,12 @@ const attrs = useAttrs();
 }
 
 section {
+  margin-top: 1rem;
   margin-bottom: 2rem;
+
+  @include lg {
+    margin-top: 0;
+  }
 }
 
 ul {

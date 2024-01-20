@@ -19,6 +19,7 @@ const props = defineProps({
 
 <template>
   <DContainer type="section">
+    <DText type="h3" variant="h3" class="mobile-only">Projects</DText>
     <template v-for="project in projects" :key="project.title">
       <DProjectCard :project="project" />
     </template>

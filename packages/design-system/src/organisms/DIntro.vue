@@ -12,8 +12,14 @@ import DText from "../atoms/DText.vue";
     <DText type="h2" variant="h2">
       <slot name="subheading"/>
     </DText>
-    <DText type="p" variant="p">
+    <DText class="d-intro-callout-text" type="p" variant="p">
       <slot name="callout"/>
     </DText>
   </DContainer>
 </template>
+
+<style lang="scss" scoped>
+  .d-intro-callout-text {
+    margin-top: 1rem;
+  }
+</style>

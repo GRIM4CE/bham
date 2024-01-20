@@ -39,6 +39,7 @@ $mobileLayoutPadding: 1rem;
 .d-layout-aside {
     @include lg {
         display: grid;
+        align-content: flex-start;
         position: sticky;
         top: 2rem;
         height: calc(100vh - 4rem);

@@ -10,6 +10,7 @@ defineProps({
 
 <template>
   <DContainer type="section">
+    <DText type="h3" variant="h3" class="mobile-only">About</DText>
     <template v-for="(aboutP, i) in about">
       <br v-if="i !== 0"/>
       <DText>{{ aboutP }}</DText>

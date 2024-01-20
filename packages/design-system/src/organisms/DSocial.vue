@@ -29,6 +29,9 @@ const props  = defineProps({
 </template>
 
 <style scoped lang="scss">
+.social-link-nav {
+  margin: 1rem 0;
+}
 .social-link {
   margin-right: 1rem;
 }

@@ -22,7 +22,7 @@ const attrs = useAttrs();
 
 <style scoped lang="scss">
 .inverted {
-  background: var(--color-p-text);
+  background: var(--color-text);
   color: var(--color-background);
 }
 

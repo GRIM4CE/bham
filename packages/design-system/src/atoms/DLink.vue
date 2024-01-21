@@ -24,10 +24,10 @@ defineProps({
 
 .no-style {
   text-decoration: none;
-  color: var(--color-p-text);
+  color: var(--color-text);
 
   &:hover {
-    color: var(--color-p-text);
+    color: var(--color-text);
   }
 }
 

@@ -5,7 +5,7 @@
 
   --grey: #d1d3d4;
 
-  --green: #245124;
+  --green: #3c5725;
   --violet: #5955a4;
   --pink: #fda2a2;
 }
@@ -13,8 +13,8 @@
 .light {
   --color-background: #e9e8ec;
   --color-border: var(--black);
-  --color-header-text: var(--black);
-  --color-p-text: var(--black);
+  --color-text: var(--black);
+  --color-text-secondary: var(--black);
   --color-link: var(--black);
   --color-link-active: var(--violet);
   --color-chip: var(--violet);
@@ -23,8 +23,8 @@
 .dark {
   --color-background: var(--black);
   --color-border: var(--white);
-  --color-header-text: var(--white);
-  --color-p-text: var(--white);
+  --color-text: var(--white);
+  --color-text-secondary: var(--white);
   --color-link: var(--white);
   --color-link-active: var(--violet);
   --color-chip: var(--violet);
@@ -33,8 +33,8 @@
 .red {
   --color-background: red;
   --color-border: var(--white);
-  --color-header-text: var(--white);
-  --color-p-text: var(--white);
+  --color-text: var(--white);
+  --color-text-secondary: var(--white);
   --color-link: var(--white);
   --color-link-active: var(--white);
   --color-chip: var(--violet);
@@ -43,8 +43,8 @@
 .blue {
   --color-background: blue;
   --color-border: var(--white);
-  --color-header-text: var(--white);
-  --color-p-text: var(--white);
+  --color-text: var(--white);
+  --color-text-secondary: var(--white);
   --color-link: var(--white);
   --color-link-active: var(--white);
   --color-chip: var(--violet);
@@ -53,8 +53,8 @@
 .green {
   --color-background: var(--green);
   --color-border: var(--pink);
-  --color-header-text: var(--pink);
-  --color-p-text: var(--white);
+  --color-text: var(--white);
+  --color-text-secondary: var(--pink);
   --color-link: var(--white);
   --color-link-active: var(--pink);
   --color-chip: var(--pink);
@@ -65,8 +65,8 @@
     // colors
     --color-background: var(--black);
     --color-border: var(--white);
-    --color-header-text: var(--white);
-    --color-p-text: var(--white);
+    --color-text: var(--white);
+    --color-text-secondary: var(--white);
   --color-link: var(--white);
   --color-link-active: var(--white);
   }
@@ -85,8 +85,8 @@ html {
 }
 
 body {
+  color: var(--color-text);
   padding: 1rem;
-  color: var(--color-p-text);
   background: var(--color-background);
   line-height: 1.6;
   font-family: "Source Code Pro", monospace;

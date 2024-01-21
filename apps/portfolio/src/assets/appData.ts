@@ -20,7 +20,7 @@ export const about = [
 export const projects = [
   { 
       img: {
-        src: "projects/design-system.png",
+        src: "https://jonleibham.imgix.net/design-system.png?auto=format",
         alt: "Portfolio Design System Web Screencap"
       },
       href: "https://design.jonleibham.com",
@@ -30,7 +30,7 @@ export const projects = [
     },
     { 
       img: {
-        src: "projects/bhamdesign.png",
+        src: "https://jonleibham.imgix.net/bhamdesign.png?auto=format",
         alt: "Old Portfolio Site Web Screencap"
       },
       href: "https://bhamdesigns.com",

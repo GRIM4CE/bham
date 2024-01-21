@@ -29,4 +29,12 @@
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
+
+  <script>
+    // Theme Script
+    const themes = ["dark", "light", "blue", "green", "red"]
+    const randomNumber = Math.floor(Math.random() * themes.length)
+
+    document.body.classList.add(themes[randomNumber])
+  </script>
 </html>

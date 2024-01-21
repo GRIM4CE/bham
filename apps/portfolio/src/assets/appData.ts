@@ -16,12 +16,17 @@ export const about = [
 
     "Beyond the professional realm, I find joy in a variety of hobbies, including woodworking, brewing, playing with synthesizers, oil painting and growing vegetables! Outside of these pursuits, you'll often find me enjoying quality time with my wife or playing board or video games."
 ]
+
+const projectImageWidth = 400
+const projectImageHeight = 220
   
 export const projects = [
   { 
       img: {
-        src: "https://jonleibham.imgix.net/design-system.png?auto==compress,format&ar=1.818&fit=clip",
-        alt: "Portfolio Design System Web Screencap"
+        src: `https://jonleibham.imgix.net/design-system.png?auto==compress,format&ar=1.818&fit=clip&w=${projectImageWidth}&h=${projectImageHeight}`,
+        alt: "Portfolio Design System Web Screencap",
+        width: projectImageWidth,
+        height: projectImageHeight
       },
       href: "https://design.jonleibham.com",
       title: "Portfolio Design-System Storybook",
@@ -30,8 +35,10 @@ export const projects = [
     },
     { 
       img: {
-        src: "https://jonleibham.imgix.net/bhamdesign.png?auto==compress,format&ar=1.818&fit=clip",
-        alt: "Old Portfolio Site Web Screencap"
+        src: `https://jonleibham.imgix.net/bhamdesign.png?auto==compress,format&ar=1.818&fit=clip&w=${projectImageWidth}&h=${projectImageHeight}`,
+        alt: "Old Portfolio Site Web Screencap",
+        width: projectImageWidth,
+        height: projectImageHeight
       },
       href: "https://bhamdesigns.com",
       title: "bhamdesigns",

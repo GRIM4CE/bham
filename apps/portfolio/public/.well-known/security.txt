@@ -1,0 +1,3 @@
+# To contact Jon Leibham regarding a vulnerability
+Contact: mailto:jleibham@gmail.com
+Preferred-Languages: en

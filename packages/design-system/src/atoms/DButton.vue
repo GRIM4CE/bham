@@ -9,6 +9,7 @@
   border: 0;
   border-radius: 4px;
   padding: .25rem .5rem;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-button-background-active);

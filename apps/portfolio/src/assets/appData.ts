@@ -23,7 +23,7 @@ const projectImageHeight = 220
 export const projects = [
   { 
       img: {
-        src: `https://jonleibham.imgix.net/design-system.png?auto==compress,format&ar=1.818&fit=clip&w=${projectImageWidth}&h=${projectImageHeight}`,
+        src: `https://jonleibham.imgix.net/design-system.png?auto==compress,format&ar=1.818&fit=crop&w=${projectImageWidth}&h=${projectImageHeight}`,
         alt: "Portfolio Design System Web Screencap",
         width: projectImageWidth,
         height: projectImageHeight
@@ -35,7 +35,7 @@ export const projects = [
     },
     { 
       img: {
-        src: `https://jonleibham.imgix.net/bhamdesign.png?auto==compress,format&ar=1.818&fit=clip&w=${projectImageWidth}&h=${projectImageHeight}`,
+        src: `https://jonleibham.imgix.net/bhamdesign.png?auto==compress,format&ar=1.818&fit=crop&w=${projectImageWidth}&h=${projectImageHeight}`,
         alt: "Old Portfolio Site Web Screencap",
         width: projectImageWidth,
         height: projectImageHeight

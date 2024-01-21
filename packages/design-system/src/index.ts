@@ -1,4 +1,5 @@
 // Atoms
+import DButton from "./atoms/DButton.vue"
 import DChip from "./atoms/DChip.vue"
 import DContainer from "./atoms/DContainer.vue"
 import DIcon from "./atoms/DIcon.vue"
@@ -23,6 +24,7 @@ import DLayout from "./layouts/DLayout.vue"
 import "./assets/main.scss"
 
 export {
+    DButton,
     DChip,
     DContainer,
     DIcon,

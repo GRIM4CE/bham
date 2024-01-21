@@ -1,6 +1,18 @@
 <script setup lang="ts">
-import { DLayout, DIntro, DSocial, DNavigation, DAbout, DProjects, DFootnote } from "@bham/design-system";
+import { DLayout, DIntro, DSocial, DNavigation, DAbout, DProjects, DFootnote, DButton } from "@bham/design-system";
 import { socialLinks, navigationLinks, about, projects } from "./assets/appData";
+
+  // Update Theme
+const rerollTheme = () => {
+  const body =  document.body
+  const currentTheme = body.className
+  const themes = ["dark", "light", "blue", "green", "red"].filter(theme => theme !== currentTheme)
+  const randomNumber = Math.floor(Math.random() * themes.length)
+
+  body.classList.remove(currentTheme);
+  body.classList.add(themes[randomNumber]);
+}
+
 </script>
 
 <template>
@@ -18,7 +30,10 @@ import { socialLinks, navigationLinks, about, projects } from "./assets/appData"
     <template v-slot:main>
       <DAbout id="about" :about="about" />
       <DProjects id="projects" :projects="projects" />
-      <DFootnote>This site was designed and built by myself. Built in a turbo mono-repo with a design system. The design system is built using CSS grid and CSS variables. The project was deployed with GitHub and AWS.</DFootnote>
+      <DFootnote>This site was designed and built by myself. Built in a turbo mono-repo with a design system. The design system is built using CSS grid and CSS variables. The project was deployed with GitHub and AWS.
+
+        <DButton @click="rerollTheme()">Reroll Theme</DButton>
+      </DFootnote>
     </template>
   </DLayout>
 </template>

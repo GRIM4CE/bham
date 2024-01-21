@@ -7,7 +7,10 @@
 
   --green: #3c5725;
   --violet: #5955a4;
+  --blue: #242042;
   --pink: #fda2a2;
+  --yellow: #ffc32b;
+  --red: #ff6353;
 }
 
 .light {
@@ -18,6 +21,9 @@
   --color-link: var(--black);
   --color-link-active: var(--violet);
   --color-chip: var(--violet);
+  --color-button-background: var(--violet);
+  --color-button-background-active: var(--violet);
+  --color-button-color: var(--white);
 }
 
 .dark {
@@ -28,26 +34,35 @@
   --color-link: var(--white);
   --color-link-active: var(--violet);
   --color-chip: var(--violet);
+  --color-button-background: var(--violet);
+  --color-button-background-active: var(--violet);
+  --color-button-color: var(--white);
 }
 
 .red {
-  --color-background: red;
+  --color-background: var(--red);
   --color-border: var(--white);
   --color-text: var(--white);
   --color-text-secondary: var(--white);
   --color-link: var(--white);
   --color-link-active: var(--white);
   --color-chip: var(--violet);
+  --color-button-background: var(--violet);
+  --color-button-background-active: var(--violet);
+  --color-button-color: var(--white);
 }
 
 .blue {
-  --color-background: blue;
+  --color-background: var(--blue);
   --color-border: var(--white);
   --color-text: var(--white);
-  --color-text-secondary: var(--white);
+  --color-text-secondary: var(--yellow);
   --color-link: var(--white);
-  --color-link-active: var(--white);
-  --color-chip: var(--violet);
+  --color-link-active: var(--yellow);
+  --color-chip: var(--yellow);
+  --color-button-background: var(--yellow);
+  --color-button-background-active: var(--yellow);
+  --color-button-color: var(--white);
 }
 
 .green {
@@ -58,18 +73,9 @@
   --color-link: var(--white);
   --color-link-active: var(--pink);
   --color-chip: var(--pink);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    // colors
-    --color-background: var(--black);
-    --color-border: var(--white);
-    --color-text: var(--white);
-    --color-text-secondary: var(--white);
-  --color-link: var(--white);
-  --color-link-active: var(--white);
-  }
+  --color-button-background: var(--pink);
+  --color-button-background-active: var(--pink);
+  --color-button-color: var(--white);
 }
 
 *,
@@ -78,6 +84,8 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: 400;
+  transition: color .4s;
+  transition: background-color .4s;
 }
 
 html {

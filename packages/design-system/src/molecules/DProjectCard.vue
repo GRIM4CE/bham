@@ -59,6 +59,8 @@ const props = defineProps({
   aspect-ratio: 1.818;
   width: 100%;
   max-width: 350px;
+  height: auto;
+
 
   @include lg {
     margin-top: .5rem;

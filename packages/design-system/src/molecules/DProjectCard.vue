@@ -22,7 +22,7 @@ const props = defineProps({
   <DContainer class="d-project-card-wrapper">
     <DContainer class="d-project-card">
       <DLink variant="no-style" :href="project.href" target="_blank">
-        <DImg class="d-project-card-img" :src="project.img.src" :alt="project.img.alt"/>
+        <DImg class="d-project-card-img" :src="project.img.src" :alt="project.img.alt" :width="project.img.width" :height="project.img.height"/>
       </DLink>
       <DContainer class="d-project-card-details">
         <DLink :href="project.href" target="_blank">
@@ -59,6 +59,8 @@ const props = defineProps({
   aspect-ratio: 1.818;
   width: 100%;
   max-width: 350px;
+  height: auto;
+
 
   @include lg {
     margin-top: .5rem;

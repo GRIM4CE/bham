@@ -9,7 +9,7 @@ const props = defineProps({
     default: "p"
   },
   variant: {
-    type: String as PropType<DTextVariant>,
+    type: String as PropType<DTextVariant> || Array as PropType<DTextVariant[]> ,
     default: "p"
   }
 });
@@ -53,5 +53,9 @@ const attrs = useAttrs();
 
 .footnote {
   @extend %footnote;
+}
+
+.secondary {
+  color: var(--color-text-secondary)
 }
 </style>

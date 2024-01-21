@@ -14,7 +14,7 @@ const props  = defineProps({
 <style scoped lang="scss">
 .d-chip {
   display: inline-flex;
-  background-color:  var(--violet);
+  background-color:  var(--color-chip);
   color: var(--white);
   border-radius: 12px;
   padding: .1rem .5rem;

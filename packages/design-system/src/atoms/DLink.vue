@@ -12,14 +12,13 @@ defineProps({
 </template>
 
 <style scoped lang="scss">
-
 %link {
-  color: var(--color-text);
+  color: var(--color-link);
   cursor: pointer;
   transition: color .4s;
 
   &:hover {
-    color: var(--violet);
+    color: var(--color-link-active);
   }
 }
 

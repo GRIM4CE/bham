@@ -6,11 +6,21 @@
   --grey: #d1d3d4;
 
   --green: #3c5725;
-  --violet: #5955a4;
   --blue: #242042;
-  --pink: #fda2a2;
+  --robin: #c6d4e3;
+
+  --violet: #5955a4;
+  --violet-accent: #7773cd;
+
+
+  --pink:#f88080;
+  --pink-accent: #fda2a2;
+
   --yellow: #ffc32b;
-  --red: #ff6353;
+  --yellow-accent: #f3ae00;
+
+  --orange: #cd5b19;
+  --orange-accent: #d4601d;
 }
 
 .light {
@@ -19,11 +29,11 @@
   --color-text: var(--black);
   --color-text-secondary: var(--black);
   --color-link: var(--black);
-  --color-link-active: var(--violet);
-  --color-chip: var(--violet);
-  --color-button-background: var(--violet);
-  --color-button-background-active: var(--violet);
-  --color-button-color: var(--white);
+  --color-link-active: var(--yellow-accent);
+  --color-chip: var(--yellow);
+  --color-button-background: var(--yellow);
+  --color-button-background-active: var(--yellow-accent);
+  --color-button-text: var(--black);
 }
 
 .dark {
@@ -32,24 +42,24 @@
   --color-text: var(--white);
   --color-text-secondary: var(--white);
   --color-link: var(--white);
-  --color-link-active: var(--violet);
+  --color-link-active: var(--violet-accent);
   --color-chip: var(--violet);
   --color-button-background: var(--violet);
-  --color-button-background-active: var(--violet);
-  --color-button-color: var(--white);
+  --color-button-background-active: var(--violet-accent);
+  --color-button-text: var(--white);
 }
 
-.red {
-  --color-background: var(--red);
-  --color-border: var(--white);
-  --color-text: var(--white);
-  --color-text-secondary: var(--white);
-  --color-link: var(--white);
-  --color-link-active: var(--white);
-  --color-chip: var(--violet);
-  --color-button-background: var(--violet);
-  --color-button-background-active: var(--violet);
-  --color-button-color: var(--white);
+.robin {
+  --color-background: var(--robin);
+  --color-border: var(--black);
+  --color-text: var(--black);
+  --color-text-secondary: var(--black);
+  --color-link: var(--black);
+  --color-link-active: var(--orange-accent);
+  --color-chip: var(--orange);
+  --color-button-background: var(--orange);
+  --color-button-background-active: var(--orange-accent);
+  --color-button-text: var(--white);
 }
 
 .blue {
@@ -58,24 +68,24 @@
   --color-text: var(--white);
   --color-text-secondary: var(--yellow);
   --color-link: var(--white);
-  --color-link-active: var(--yellow);
+  --color-link-active: var(--yellow-accent);
   --color-chip: var(--yellow);
   --color-button-background: var(--yellow);
-  --color-button-background-active: var(--yellow);
-  --color-button-color: var(--white);
+  --color-button-background-active: var(--yellow-accent);
+  --color-button-text: var(--blue);
 }
 
 .green {
   --color-background: var(--green);
-  --color-border: var(--pink);
+  --color-border: var(--white);
   --color-text: var(--white);
   --color-text-secondary: var(--pink);
   --color-link: var(--white);
-  --color-link-active: var(--pink);
+  --color-link-active: var(--pink-accent);
   --color-chip: var(--pink);
   --color-button-background: var(--pink);
-  --color-button-background-active: var(--pink);
-  --color-button-color: var(--white);
+  --color-button-background-active: var(--pink-accent);
+  --color-button-text: var(--white);
 }
 
 *,

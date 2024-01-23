@@ -3,7 +3,19 @@ import type { Preview } from "@storybook/vue3";
 import "@bham/design-system/dist/style.css"
 import "./storybook.css"
 
+
 const preview: Preview = {
+  globalTypes: {
+    theme: {
+      description: 'Global theme for components',
+      defaultValue: 'dark',
+      toolbar: {
+        title: 'Theme',
+        icon: 'circlehollow',
+        items: ["dark", "light", "blue", "green", "robin"],
+      },
+    },
+  },
   parameters: {
     options: {
       storySort: (a, b) => {
@@ -33,8 +45,27 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i
       }
-    }
-  }
+    },
+  },
+      decorators: [
+      (story, context) => {
+        const activeTheme = context.globals.theme || 'dark';
+        const body = document.body
+
+        const inactiveThemes = ["dark", "light", "blue", "green", "robin"].filter(theme => theme !== activeTheme)
+        inactiveThemes.forEach(theme => {
+          if(body.classList.contains(theme)) {
+            body.classList.remove(theme)
+          }
+        })
+
+        body.classList.add(activeTheme);
+        return {
+          components: { story },
+          template: `<story />`
+        };
+      },
+    ]
 };
 
 export default preview;

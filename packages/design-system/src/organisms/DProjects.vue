@@ -18,7 +18,7 @@ const props = defineProps({
 
 
 <template>
-  <DContainer type="section">
+  <DContainer type="section" class="d-project-section">
     <DText type="h3" variant="h3" class="mobile-only">Projects</DText>
     <template v-for="project in projects" :key="project.title">
       <DProjectCard :project="project" />
@@ -27,6 +27,10 @@ const props = defineProps({
 </template>
 
 <style scoped lang="scss">
+  .d-project-section {
+    padding-bottom: 1rem;
+  }
+
   .d-projects-keynotes {
     column-gap: .5rem;
   }

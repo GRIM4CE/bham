@@ -46,6 +46,8 @@ const attrs = useAttrs();
 section {
   margin-top: 1rem;
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: .5px solid var(--color-border);
 
   @include lg {
     margin-top: 0;

@@ -5,16 +5,16 @@ import type { PropType } from "vue";
 
 type DButtonIcon = {
   name: DIconName,
-  alt: string
+  label: string
 }
 
 const props = defineProps({
   icon: Object as PropType<DButtonIcon>,
 })
 
-const getAlt = () => {
+const getLabel = () => {
   if(!props.icon) return undefined
-  return props.icon.alt 
+  return props.icon.label 
 }
 
 const getClass = () => {
@@ -24,7 +24,7 @@ const getClass = () => {
 </script>
 
 <template>
-  <button :class="getClass()" :alt="getAlt()"><DIcon v-if="icon" :name="icon.name"/><slot /></button>
+  <button :class="getClass()" :aria-label="getLabel()"><DIcon v-if="icon" :name="icon.name"/><slot /></button>
 </template>
 
 <style scoped lang="scss">

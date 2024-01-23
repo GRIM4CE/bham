@@ -28,7 +28,7 @@ export const Icon: Story = {
   args: {
     icon: {
       name: "theme",
-      alt: "icon alt tag if no text"
+      label: "icon aria-label if no text"
     }
   }
 };

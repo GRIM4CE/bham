@@ -32,7 +32,7 @@ const rerollTheme = () => {
       <DProjects id="projects" :projects="projects" />
       <DFootnote>This site was designed and built by myself. Built in a turbo mono-repo with a design system. The design system is built using CSS grid and CSS variables. The project was deployed with GitHub and AWS.
         <template v-slot:button>
-          <DButton @click="rerollTheme()" :icon="{name: 'theme', alt: 'Reroll theme'}" />
+          <DButton @click="rerollTheme()" :icon="{name: 'theme', label: 'Reroll theme'}" />
         </template>
       </DFootnote>
     </template>

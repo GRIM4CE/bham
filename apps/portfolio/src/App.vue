@@ -6,7 +6,7 @@ import { socialLinks, navigationLinks, about, projects } from "./assets/appData"
 const rerollTheme = () => {
   const body =  document.body
   const currentTheme = body.className
-  const themes = ["dark", "light", "blue", "green", "red"].filter(theme => theme !== currentTheme)
+  const themes = ["dark", "light", "blue", "green", "robin"].filter(theme => theme !== currentTheme)
   const randomNumber = Math.floor(Math.random() * themes.length)
 
   body.classList.remove(currentTheme);
@@ -32,7 +32,7 @@ const rerollTheme = () => {
       <DProjects id="projects" :projects="projects" />
       <DFootnote>This site was designed and built by myself. Built in a turbo mono-repo with a design system. The design system is built using CSS grid and CSS variables. The project was deployed with GitHub and AWS.
         <template v-slot:button>
-          <DButton @click="rerollTheme()">Reroll Theme</DButton>
+          <DButton @click="rerollTheme()" :icon="{name: 'theme', alt: 'Reroll theme'}" />
         </template>
       </DFootnote>
     </template>

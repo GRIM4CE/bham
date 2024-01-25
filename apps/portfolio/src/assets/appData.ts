@@ -22,6 +22,18 @@ const projectImageHeight = 220
   
 export const projects = [
   { 
+    img: {
+      src: `https://jonleibham.imgix.net/web-synth-wizard-logo.png?auto==compress,format&ar=1.818&fit=crop&w=${projectImageWidth}&h=${projectImageHeight}`,
+      alt: "Web Synth Wizard logo",
+      width: projectImageWidth,
+      height: projectImageHeight
+    },
+    href: "https://websynthwizard.com/",
+    title: "Web Synth Wizard",
+    description: 'Synth application built in Vue3 composition utilizing AudioContext API.',
+    keynotes: ["AudioContext", "Typescript", "Vue3"]
+  },
+  { 
       img: {
         src: `https://jonleibham.imgix.net/design-system.png?auto==compress,format&ar=1.818&fit=crop&w=${projectImageWidth}&h=${projectImageHeight}`,
         alt: "Portfolio Design System Web Screencap",

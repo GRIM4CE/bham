@@ -6,7 +6,7 @@ export const navigationLinks = [
 export const socialLinks = [
     { name: "github",  href: "https://github.com/GRIM4CE" },
     { name: "linkedin", href: "https://www.linkedin.com/in/jon-l-a29b93105" },
-    { name: "resume", href: "jon-leibham-resume-2024.pdf" }
+    { name: "resume", href: "https://jonleibham.imgix.net/resume+2024.pdf" }
   ]
 
 export const about = [

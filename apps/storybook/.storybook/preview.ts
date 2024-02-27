@@ -8,11 +8,11 @@ const preview: Preview = {
   globalTypes: {
     theme: {
       description: 'Global theme for components',
-      defaultValue: 'dark',
+      defaultValue: 'default',
       toolbar: {
         title: 'Theme',
         icon: 'circlehollow',
-        items: ["dark", "light", "blue", "green", "robin"],
+        items: ["default", "dark", "light", "blue", "green", "robin"],
       },
     },
   },
@@ -49,10 +49,10 @@ const preview: Preview = {
   },
       decorators: [
       (story, context) => {
-        const activeTheme = context.globals.theme || 'dark';
+        const activeTheme = context.globals.theme || 'default';
         const body = document.body
 
-        const inactiveThemes = ["dark", "light", "blue", "green", "robin"].filter(theme => theme !== activeTheme)
+        const inactiveThemes = ["default", "dark", "light", "blue", "green", "robin"].filter(theme => theme !== activeTheme)
         inactiveThemes.forEach(theme => {
           if(body.classList.contains(theme)) {
             body.classList.remove(theme)

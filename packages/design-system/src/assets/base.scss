@@ -23,6 +23,21 @@
   --orange-accent: #d4601d;
 }
 
+
+.default {
+  --color-background: #eee7e9;
+  --color-border: #0f3534;
+  --color-text: #1b4445;
+  --color-text-secondary: #0f3534;
+  --color-link: #f37572;
+  --color-link-active: #e63330;
+  --color-chip: #f37572;
+  --color-button-background: #f37572;
+  --color-button-background-active: #e63330;
+  --color-button-text: #eee7e9;
+}
+
+
 .light {
   --color-background: #e9e8ec;
   --color-border: var(--black);

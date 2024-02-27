@@ -6,7 +6,7 @@ import { socialLinks, navigationLinks, about, projects } from "./assets/appData"
 const rerollTheme = () => {
   const body =  document.body
   const currentTheme = body.className
-  const themes = ["dark", "light", "blue", "green", "robin"].filter(theme => theme !== currentTheme)
+  const themes = ["default", "dark", "light", "blue", "green", "robin"].filter(theme => theme !== currentTheme)
   const randomNumber = Math.floor(Math.random() * themes.length)
 
   body.classList.remove(currentTheme);

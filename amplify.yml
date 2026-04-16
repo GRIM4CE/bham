@@ -8,10 +8,10 @@ applications:
             - nvm install 20
             - npm install -g npm@10.2.4
             - node -v && npm -v
-            - cd "$CODEBUILD_SRC_DIR" && npm ci
+            - cd "$(git rev-parse --show-toplevel)" && npm ci
         build:
           commands:
-            - cd "$CODEBUILD_SRC_DIR" && npx turbo run build --filter=@bham/portfolio
+            - cd "$(git rev-parse --show-toplevel)" && npx turbo run build --filter=@bham/portfolio
       artifacts:
         baseDirectory: dist
         files:
@@ -28,10 +28,10 @@ applications:
             - nvm install 20
             - npm install -g npm@10.2.4
             - node -v && npm -v
-            - cd "$CODEBUILD_SRC_DIR" && npm ci
+            - cd "$(git rev-parse --show-toplevel)" && npm ci
         build:
           commands:
-            - cd "$CODEBUILD_SRC_DIR" && npx turbo run build --filter=@bham/storybook
+            - cd "$(git rev-parse --show-toplevel)" && npx turbo run build --filter=@bham/storybook
       artifacts:
         baseDirectory: storybook-static
         files:

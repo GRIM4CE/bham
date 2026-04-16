@@ -6,10 +6,10 @@ frontend:
         - nvm install 20
         - npm install -g npm@10.2.4
         - node -v && npm -v
-        - cd ../../ && npm ci
+        - cd "$CODEBUILD_SRC_DIR" && npm ci
     build:
       commands:
-        - cd ../../ && npx turbo run build --filter=@bham/portfolio
+        - cd "$CODEBUILD_SRC_DIR" && npx turbo run build --filter=@bham/portfolio
   artifacts:
     baseDirectory: dist
     files:
